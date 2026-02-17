@@ -1,0 +1,31 @@
+.Container {
+      display: flex;        
+      width: 100%;
+      min-height: 100vh;
+      justify-content: space-between;
+}
+
+.RightSide {
+      display: flex;
+      flex-direction: row;
+      width: auto;
+      height:70px;
+      background-color: #f0f0f0;
+}
+
+.OutLet {
+      display: flex;
+      flex-direction: column;
+      width: auto;
+      height: auto;
+      margin: auto;
+      background-color: #f0f0f0;
+}
+
+.LeftSide {
+      display: flex;
+      flex-direction: row;
+      width: auto;
+      height: auto;
+      background-color: #f0f0f0;
+}
