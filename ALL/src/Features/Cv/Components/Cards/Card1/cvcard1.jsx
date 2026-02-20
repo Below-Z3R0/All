@@ -1,12 +1,12 @@
-import "./card1.css"
-export function Card1 ({Txt, imgsrc}) {
+import "./cvcard1.css"
+export function CvCard1 ({Txt, imgsrc}) {
     return (
-        <div className="Card1Container">
+        <div className="CardContainer">
             <div className="CardImgContainer">
                 <img src = {imgsrc} alt="Card Image" />
             </div>
             <div className="CardTextContainer">
-                <p>{Txt}</p>
+                <h5>{Txt}</h5>
             </div>
         </div>
     )

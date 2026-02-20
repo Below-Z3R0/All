@@ -1,0 +1,38 @@
+.Section2Container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80%;
+    background-color: rgb(148, 200, 245);
+    padding: 40px;
+    height: 640px;
+}
+
+.Section2First, .Section2Second, .Section2Third, .Section2Fourth, .Section2Fifth, .Section2Sixth{
+    height: 200px;
+    width: 280px;
+}
+
+.Section2First{
+
+}
+
+.Section2Second{
+
+}
+.Section2SecondCardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.Section2Third{
+
+}
+
+.Section2Fifth{
+
+}
+
+.Section2Sixth{
+
+}

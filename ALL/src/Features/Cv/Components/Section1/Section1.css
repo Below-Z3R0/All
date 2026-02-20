@@ -1,8 +1,10 @@
 .SectionContainer{
-    width: calc(100% + 200px);
-    height: calc(100%+ 100px);
+    width: 100%;
+    height: auto;
     display: flex;
-    flex-direction: Row;
+    flex-direction: row;
+    padding: 20px;
+    gap: 20px;
 }
 
 .LeftSideSection{
@@ -24,8 +26,8 @@
     flex-direction: column;
 }
 
-.Paragrapht1Container{
-    width: 100%;
+.Paragraph1Container{
+    width: 700px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -45,14 +47,16 @@
 
 }
 
-.CardContainer{
-    width: 100%;
+.Section1CardsContainer{
+    width: 70%;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: flex-start;
+    justify-content: space-between;
+    margin: auto;
+    margin-left: 50px;
 }
 
 .Section1TitleText{
@@ -61,12 +65,12 @@
 }
 
 .RightSideSection{
-    width: 30%;
+    width: auto;
     margin: 0;
 }
 
 .RightSideSection img{
     width: 100%;
     height: auto;
-
+    overflow: hidden;
 }

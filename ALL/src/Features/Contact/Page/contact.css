@@ -1,0 +1,70 @@
+.ContactContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px;
+    background-color: aqua;
+    width: 1220px;
+    height: auto;
+    margin: auto;
+}
+
+.ItemContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1000px;
+    height: 400px;
+}
+
+.img{
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.RightSideItemContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+.TitleContainer{
+    height: 80px;
+    margin: 0px;
+}
+
+.Title{
+    margin: 0px;
+}
+
+.PharagrahptContainer{
+    height: auto;
+    margin: 0px;
+}
+
+.Pharagrahpt{
+
+}
+
+.LogosContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 60px;
+    width: auto;
+    gap: 10px;
+}
+
+.LogosImgContainer{
+    height: 50px;
+    width: 50px;
+}
+
+.img{
+
+}
