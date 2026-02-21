@@ -1,9 +1,13 @@
 import "./contact.css";
 import {ContactData} from "./../Data/contactdata.js"
-export default function Contact () {
+import { useState } from "react";
+
+function ContactCard ({item}) {
+    const [descripcionActual, setDescripcionActual] = useState(item.Description)
+    const handleLogoClick = (nuevaDescripcion) => {
+        setDescripcionActual(nuevaDescripcion);
+    };
     return (
-        <div className="ContactContainer">
-            {ContactData.General.map(item => 
             <div className="ItemContainer" key = {item.id}>
                 <div style={{backgroundImage: `url(${item.ImgSrc})`}} className="img">
                 </div>
@@ -13,18 +17,29 @@ export default function Contact () {
                             <h1 clasName="Title">{item.Title}</h1>
                         </div>
                         <div className="PharagrahptContainer">
-                            <p className="Pharagrahpt">{item.Description}</p>
+                            <p className="Pharagrahpt">{descripcionActual}</p>
                          </div>
                         </div>
 
                         <div className="LogosContainer">
-                            {ContactData.ImgsContainer.map(itemImg => 
-                            <div key = {itemImg.id} className = "LogoImgContainer">
-                                <img className="img" src = {itemImg.Logo}/>
+                            {item.ImgsContainer.map(logoItem => 
+                            <div key = {logoItem.id} className = "LogoImgContainer"
+                             onClick={() => handleLogoClick(logoItem.Description)}
+                            >
+                                <img className="img" src = {logoItem.Logo}/>
                             </div>)}
                         </div>
                 </div>
-            </div>)}
-        </div>
+            </div>
     )
+}
+
+export default function Contact() {
+  return (
+    <div className="ContactContainer">
+      {ContactData.General.Gene.map(item => (
+        <ContactCard key={item.id} item={item} />
+      ))}
+    </div>
+  );
 }
