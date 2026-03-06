@@ -1,0 +1,102 @@
+/*Body*/
+.Section5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(118, 150, 177);
+}
+
+
+/*Title*/
+.SectionTitleContainer {}
+.Section5Title {}
+
+
+/*Content Block*/
+.Section5ContentBlock {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 3rem;
+}
+/*Cads*/
+.Section5ProyectsBody {
+    display: flex;
+    flex-direction: column;
+    width: 24rem;
+    height: 24rem;
+    border-radius: 40px;
+    padding-bottom: 1.5rem;
+    background-color: antiquewhite;
+}
+.Section5ProyectsImg {
+    height: 45%;
+    width: 100%;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    object-fit: cover;
+    overflow: hidden;
+}
+/*Cards Txt*/
+.Section5ProyectsTxt {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.Section5ProyectsTxtTitle {
+    margin: 0;
+}
+.Section5ProyectsTxtParagrapht {
+    margin: 5px 0 0 0;
+}
+/*Cards buttons and logos*/
+.Section5ProyectsBottonsBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    gap: .5rem;
+}
+/*Buttons*/
+.Section5ProyectsBottonContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+    margin-bottom: 10px;
+}
+.Section5Button {
+    width: 9rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border-style: hidden;
+    gap: .5rem;
+}
+.Section5ButtonImg {
+    height: 20px;
+    width: 20px;
+}
+.Section5ButtonTxt {
+    font-size: 1rem;
+}
+/*Logos*/
+.Section5ProyectsLogosContainer {
+    display: flex;
+    width: 100%;
+    gap: .5rem;
+    padding-left: 3.5rem;
+}
+.Section5Logo {
+    border-style: hidden;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+}
+.Section5LogoImg {
+    height: 20px;
+    width: 20px;
+}

@@ -1,30 +1,54 @@
-import "./Section1.css"
-import { CvCard1 } from "../Cards/Card1/cvcard1"
-export function Section1 ({Title, Paragraph1, SecondTitle, DataCard, imgsrc}) {
-    return (
-        <div className="SectionContainer">
-            <div className="LeftSideSection">
-                <div className="Section1Title">
-                    <h1 className = "Section1TitleText">{Title}</h1>
+import "./Section1.css";
+export function Section1 ({Data}) {
+    return (                  
+        <div className = "Section Section1" >
+            <div className="Section1Contactblock">
+                <div className="Section1ImgContactContainer">
+                {Data.Section1.Contact.map(Item =>
+                    <img 
+                    key = {Item.Id}
+                    src={Item.ImgSrc}
+                    className = "Section1ImgContacts"
+                    />
+                )}
+                </div>
+            </div>
+            <div className="Section1Content">
+                <div className="Section1TitlesContainer">
+                    <p className="Section1Title1">
+                        {Data.Section1.Title1}
+                    </p>
+                    <p className="Section1Title2">
+                        {Data.Section1.Title2}
+                    </p>
                 </div>
 
-                <div className = "Section1Content">
-                    <div className = "Paragraph1Container">
-                        <p className = "Paragraph1">{Paragraph1}</p>
+                <div className="Section1ContentContainerr">
+                    <div className = "Section1ParagraphtContainer">
+                        <p className="Section1Paragrapht">
+                            {Data.Section1.Paragrapht}
+                        </p>
                     </div>
-                    <div className = "ContactContainer">
-                        <h2>{SecondTitle}</h2>
-                        <div className="Section1CardsContainer">
-                            {DataCard.map(item =>
-                            <CvCard1 key={item.id} Txt={item.Txt} imgsrc={item.imgsrc} />)}
-                        </div>
-                  </div>
+                    <div className="Section1BottonsContainer">
+                        {Data.Section1.Bottons.map(BottonsItems =>
+                        <div 
+                        className="Bottons"
+                        key = {BottonsItems.Id}
+                        >
+                        <p className = "Sections1BottonsTxt">
+                            {BottonsItems.Txt}
+                        </p>
+                    </div>
+                    )}
+                    </div>
                 </div>
             </div>
-
-            <div className = "RightSideSection">
-                  <img src = {imgsrc}/>
-            </div>
-        </div>
+            <div className="Section1ImgContainer">
+                <img
+                    className="Section1Img"
+                    src={Data.Section1.ImgSrc}
+                />
+             </div>
+        </div>  
     )
 }

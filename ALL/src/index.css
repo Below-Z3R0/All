@@ -18,3 +18,16 @@ body {
   min-height: 100vh;
   margin: 0;
 }
+
+.Section{
+  max-width: 1920px;
+  width: 100%;
+  padding: 2.5rem 0rem 5rem 0rem;
+  margin: 0 auto;
+}
+
+.SectionTitleContainer{
+  display: flex;
+  justify-content: center;
+  margin: 0 0 2rem 0;
+}

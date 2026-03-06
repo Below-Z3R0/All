@@ -1,54 +1,28 @@
-import "./Section2.css"
-import { CvCard2 } from "../Cards/Card2/cvcard2.jsx"
-export function Section2 ({DataSec2}) {
+import "./Section2.css";
+export function Section2 ({Data}) {
     return (
-        <div className="Section2Container">
-            <div className="Section2First">
-                <h1>{DataSec2.First.Title}</h1>
-                {DataSec2.First.items.map(item =>
-                <div key={item.id}>
-                    <h5 >{item.Txt}</h5>
-                </div>)}
+        <div className = "Section Section2">
+            <div className="SectionTitleContainer">
+                <h1 className="Section2TitleTxt">
+                    {Data.Section2.Title}
+                </h1>
             </div>
 
-            <div className="Section2Second">
-                <h1>{DataSec2.Second.Title}</h1>
-                <div className = "Section2SecondCardContainer">
-                    {DataSec2.Second.items.map(item =>
-                    <CvCard2 key={item.id} Txt={item.Txt} imgsrc={item.imgsrc}/>)}
+            <div className="Section2ContentBlock">
+                <div className="Section2ImgContainer">
+                    <img 
+                    className="Section2Img"
+                    src={Data.Section2.ImgSrc}
+                    />
                 </div>
-            </div>
-
-            <div className="Section2Third">
-                <h1>{DataSec2.Third.Title}</h1>
-                {DataSec2.Third.items.map(item =>
-                <div key = {item.id}>
-                    <h5>{item.Txt}</h5>
-                </div>)}
-
-            <div className="Section2Fourth">
-                <h1>{DataSec2.Fourth.Title}</h1>
-                {DataSec2.Fourth.items.map(item =>
-                <div key = {item.id}>
-                    <h5> {item.Txt}</h5>
-                </div>)}
-            </div>
-
-            <div className="Section2Fifth">
-                <h1>{DataSec2.Fifth.Title}</h1>
-                {DataSec2.Fifth.items.map(item =>
-                <div key = {item.id}>
-                    <h5>{item.Txt}</h5>
-                </div>)}
-            </div>
-
-            <div className="Section2Sixth">
-                <h1>{DataSec2.Sixth.Title}</h1>
-                {DataSec2.Sixth.items.map(item =>
-                <div key = {item.id}>
-                    <h5>{item.Txt}</h5>
-                </div>)}
-            </div>
+                <div className="Section2TxtContainer">
+                    <h3 className="Section2TxtTitle">
+                        {Data.Section2.SecondTitle}
+                    </h3>
+                    <p className="Section2TxtParagrapht">
+                        {Data.Section2.Paragrapht}
+                    </p>
+                </div>
             </div>
         </div>
     )

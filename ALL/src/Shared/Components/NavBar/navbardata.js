@@ -1,9 +1,48 @@
 import LogoImg from "./../../../assets/Img/logoimg.jpg";
-const fontSize = "1rem";
 export const NavbarData = {
   Cards: [
-    {id: 1, title: " ", link: "/", description: "AllProyects", imageSrc: LogoImg, width: "100px", height: "150px", fontSizeH: fontSize, fontSizeP: fontSize, padding: "10px"},
-    {id: 2, title: " ", link: "/Cv", description: "Cv", imageSrc: LogoImg, width: "100px", height: "150px", fontSizeH: fontSize, fontSizeP: fontSize, padding: "10px"},
-    {id: 3, title: " ", link: "/contact", description: "Contact", imageSrc: LogoImg, width: "250px", height: "200px", fontSizeH: fontSize, fontSizeP: fontSize, padding: "30px"},
-  ]
+    {
+      Id: 1, 
+      Title: "Home", 
+      Link: "/", 
+    },
+    {
+      Id: 2, 
+      Title: "Sobre mí", 
+      Link: "/#Sobre mí",
+    },
+    {
+      Id: 3, 
+      Title: "Habilidades", 
+      Link: "/#Habilidades",
+    },
+    {
+      Id: 4, 
+      Title: "Formación", 
+      Link: "/#Formación",
+    },
+    {
+      Id: 5, 
+      Title: "Proyectos", 
+      Link: "/#Proyectos",
+    },
+    {
+      Id: 6, 
+      Title: "Contacto", 
+      Link: "/#Contacto",
+    },
+    {
+      Id: 7, 
+      Title: "AllProyects", 
+      Link: "/AllProyects",
+    },
+  ],
+
+  Languages: [
+    {Id: 1, ImgSrc: LogoImg},
+    {Id: 2, ImgSrc: LogoImg},
+    {Id: 3, ImgSrc: LogoImg},
+  ],
+
+  DayOrNight: LogoImg
 }

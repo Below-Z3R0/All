@@ -1,0 +1,35 @@
+/*Body*/
+.Section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(196, 30, 30);
+}
+
+/*Content block*/
+.Section3Contentblock {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    gap: 2rem;
+}
+/*Logos*/
+.Section3LogoContainer {
+    display: flex;
+    flex-direction: column;
+    width: 6rem;
+    height: 7rem;
+    padding: 1rem;
+    border-radius: 20px;
+    background-color: blueviolet;
+    align-items: center;
+}
+.Section3LogoImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Section3LogoTitle {}

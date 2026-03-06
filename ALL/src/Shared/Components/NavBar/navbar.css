@@ -1,40 +1,61 @@
 .NavBodyContainer {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  background-color: #7dbaf7;
+  width: 100%;
+  position: fixed;
+  background: rgba(41, 41, 41, 0);
+  backdrop-filter: blur(15px);
   height: auto;
-  width: auto;
-  padding: auto;
 }
 
 .NavBody {
-  margin-top: 400px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  background-color: #7dbaf7;
-  width: auto;
-  height: 600px;
-}
-
-.ButtonOpen, .ButtonClose {
-  background-color: transparent;
-  border: none;
-  color: white;
-  font-size: 1.2rem;
-  width: 60px;
-  height: 20px;
-}
-
-.CardsContainer {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  max-width: 1920px;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+}
+.LinksContainer {
+  display: flex;
+  flex-direction: row;
   gap: 10px;
-  margin: 30px;
-  margin-bottom: auto;
-  width: 250px;
 }
 
+.RightSide {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.Links {
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+}
+.ImgsContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1px;
+
+}
+
+.ImgContainer {
+  padding: 5px;
+  display: flex;
+  height: 2rem;
+  width: 2rem;
+}
+
+.Img {
+  overflow: hidden;
+  object-fit: fill;
+  border-radius: 50px;
+}
+
+.LeftImgContainer {
+  padding: 5px;
+  padding-left: 1.5rem;
+  display: flex;
+  height: 45px;
+  width: 45px;
+}

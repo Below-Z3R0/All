@@ -1,0 +1,49 @@
+/*Body*/
+.Section4 {
+    background-color: antiquewhite;
+    width: 100%;
+    height: 70vh;
+    max-height: 70%;
+    justify-content: center;
+}
+.Section4Title {}
+
+
+/*Content Block*/
+.Section4ContentBlock {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+}
+/*Img*/
+.Section4ImgContainer {
+    display: flex;
+    background-color: aliceblue;
+    border-radius: 40px;
+    flex-direction: column;
+    align-items: center;
+    width: 16rem;
+    height: 18rem;
+    padding: 2rem;
+}
+.Section4Img {
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    overflow: hidden;
+}
+/*Txt*/
+.Section4TxtContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Section4TxtTitle {
+    margin: 0px;
+    font-size: 1.5rem;
+}
+.Section4TxtDate {
+    margin: 0px;
+    font-size: 1rem;
+}

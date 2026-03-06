@@ -1,16 +1,21 @@
 import "./cv.css";
-import { cvdata } from "../Data/cvdata.js"
-import { Section2 } from "../Components/Section2/Section2.jsx"
-import { Section1 } from "../Components/Section1/Section1.jsx"
+import { CvData } from "../Data/cvdata.js";
+import { Section1 } from "../Components/Section1/Section1.jsx";
+import { Section2 } from "../Components/Section2/Section2.jsx";
+import { Section3 } from "../Components/Section3/Section3.jsx";
+import { Section4 } from "../Components/Section4/Section4.jsx";
+import { Section5 } from "../Components/Section5/Section5.jsx";
+import { Section6 } from "../Components/Section6/Section6.jsx";
+
 export default function Cv () {
     return (
-        <div className="CvContainer">
-            <div className="CvContent">
-                <Section1 Title={cvdata.Section1.Title} Paragraph1={cvdata.Section1.Paragraph1} SecondTitle={cvdata.Section1.SecondTitle} DataCard={cvdata.Section1.Card} imgsrc={cvdata.Section1.ImgSrc}/>
-            </div> 
-            <div>
-                <Section2 DataSec2={cvdata.Section2}/>
-            </div>
+        <div >
+            <Section1 Data={CvData}/>
+            <Section2 Data={CvData}/>
+            <Section3 Data={CvData}/>
+            <Section4 Data={CvData}/>
+            <Section5 Data={CvData}/>
+            <Section6 Data={CvData}/>
         </div>
     )
 }

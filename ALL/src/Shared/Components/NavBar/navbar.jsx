@@ -1,34 +1,42 @@
 import "./navbar.css";
-import { useState } from 'react';
 import { NavbarData } from "./navbardata.js";
 import { Link } from "react-router-dom";
-import { Card1 } from "../Cards/Card1/card1.jsx";
 
 export function NavBar () {
-  const [stateMenu, setStateMenu] = useState("Close");
   return(
     <div className="NavBodyContainer">
-      {stateMenu === "Close" && (
-      <button onClick={() => setStateMenu("Open")} className="ButtonOpen">
-        📚 Menú
-      </button>)}
-      {stateMenu === "Open" && (
-      <button onClick={() => setStateMenu("Close")} className="ButtonClose">
-        🚪 Cerrar
-      </button>)}
-      {stateMenu === "Open" && (
-        <div className="NavBody">
-          <div className="CardsContainer">
-            {NavbarData.Cards.map(item => 
-            <Link key={item.id} to={item.link}>
-              <Card1 key={item.id} title={item.title} description={item.description}
-               imageSrc={item.imageSrc} width={item.width} height={item.height} 
-               fontSizeH={item.fontSizeH} fontSizeP={item.fontSizeP} padding={item.padding} />
+      <div className="Section NavBody  ">
+        <div className="LeftImgContainer">
+          <img src= {NavbarData.DayOrNight} className="Img"/>
+        </div>
+        
+        <div className="RightSide">
+          <div className="LinksContainer">
+            {NavbarData.Cards.map(Item => 
+            <Link key={Item.Id} to={Item.Link} className="Links">
+              <h2 className="Links">{Item.Title}</h2>
             </Link>
             )}
           </div>
+
+          <div className="ImgsContainer">
+            {NavbarData.Languages.map(Language =>
+              <div key = {Language.Id}className="ImgContainer">
+                <img 
+                  src = {Language.ImgSrc}
+                  className="Img"
+                />
+              </div>
+            )}
+            <div className="ImgContainer">
+              <img 
+                src = {NavbarData.DayOrNight}
+                className="Img"
+              />
+            </div>
+          </div>
         </div>
-        )}
       </div>
+    </div>
   ) 
 }

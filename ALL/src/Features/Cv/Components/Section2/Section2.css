@@ -1,38 +1,43 @@
-.Section2Container{
+/*Body*/
+.Section2 {
+    height: auto;
+    max-height: 55rem;
+    background-color: black;
+}
+
+
+.Section2TitleTxt {}
+
+
+/*Content Block*/
+.Section2ContentBlock {
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 80%;
-    background-color: rgb(148, 200, 245);
-    padding: 40px;
-    height: 640px;
 }
-
-.Section2First, .Section2Second, .Section2Third, .Section2Fourth, .Section2Fifth, .Section2Sixth{
-    height: 200px;
-    width: 280px;
-}
-
-.Section2First{
-
-}
-
-.Section2Second{
-
-}
-.Section2SecondCardContainer{
+/*Img*/
+.Section2ImgContainer {
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    padding-top: 5rem;
+    justify-content: center;
+    width: 50%;
 }
-.Section2Third{
-
+.Section2Img {
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
 }
-
-.Section2Fifth{
-
+/*Txt*/
+.Section2TxtContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 2rem;
+    padding-top: 10rem;
 }
-
-.Section2Sixth{
-
+.Section2TxtTitle {
+    margin: 0px;
+    font-size: 2rem;
+}
+.Section2TxtParagrapht {
+    margin: 0px;
+    font-size: 1.3rem;
 }

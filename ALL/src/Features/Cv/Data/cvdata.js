@@ -1,55 +1,98 @@
-import img1 from "../../../assets/Img/3.png"
-export const cvdata = {
+import img1 from "../../../assets/Img/3.png";
+export const CvData = {
     Section1: {
-        SecondTitle: "Second Title",
-        Paragraph1: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.",
-        Title: "KWJW",
+        Title1:"Title1",
+        Title2:"Title2",
+        Paragrapht: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc. Donec auctor, nisl eget ultricies lacinia, nunc nisl aliquam nisl, eget aliquam nunc nisl eget nunc.",
         ImgSrc: img1,
-        Card: [
-        {id: 1, Txt: "Card 1 Text",imgsrc: img1},
-        {id: 2,Txt: "Card 2 Text",imgsrc: img1},
-        {id: 3,Txt: "Card 3 Text",imgsrc: img1},
+        Contact: [
+        {Id: 1, ImgSrc: img1},
+        {Id: 2, ImgSrc: img1},
+        {Id: 3, ImgSrc: img1},
+        ],
+        Bottons: [
+            {Id:1, Txt: "hserhher"},
+            {Id:2, Txt: "HHEFRFRRF"},
         ]
     },
     
-    Section2: { 
-        First: {
-            Title: "Education",
-            items:[
-            {"id": 1, "Txt": "Education 1"},
-            {"id": 2, "Txt": "Education 2"},
-            {"id": 3, "Txt": "Education 3"},
-        ]},
-        Second:{
-            Title: "Techical Skill",
-            items:[
-            {id: 1, imgsrc: img1},
-            {id: 2, imgsrc: img1},
-            {id: 3, imgsrc: img1},
-       ]},
-       Third: {
-            Title: "Interest",
-            items:[
-        {id: 1, Txt: "Interest 1"},
-        {id: 2, Txt: "Interest 2"}  
-       ]},
-       Fourth: {
-            Title: "SoftSkills",
-            items:[
-        {id: 1, Txt: "Soft Skill 1"},
-        {id: 2, Txt: "Soft Skill 2"}  
-       ]},
-        Fifth: {
-            Title: "SkillSet",
-            items:[
-        {id: 1, Txt: "Skill Set 1"},
-        {id: 2, Txt: "Skill Set 2"}  
-       ]},
-        Sixth: {
-            Title: "Language",
-            items:[
-        {id: 1, Txt: "Language 1"},
-        {id: 2, Txt: "Language 2"}
-        ]}
+    Section2: {
+            Title: "Sobre mí",
+            ImgSrc: img1,
+            SecondTitle: "Second",
+            Paragrapht: "jkejfrhbervhebrfyeseuseruuesriers"
+        
+    },
+    Section3: {
+        Title: "Habilidades",
+        Logos: [
+            {Id:1, ImgSrc: img1, Names: "Tecnologia"},
+            {Id:2, ImgSrc: img1, Names: "Tecnologia"},
+            {Id:3, ImgSrc: img1, Names: "Tecnologia"},
+            {Id:4, ImgSrc: img1, Names: "Tecnologia"},
+        ]
+    },
+    Section4: {
+        Title: "Formación",
+        Cards: [
+            {Id:1, ImgSrc: img1, Title: "formacion", Date: "Ahora"},
+            {Id:2, ImgSrc: img1, Title: "formacion", Date: "Ahora"},
+            {Id:3, ImgSrc: img1, Title: "formacion", Date: "Ahora"}
+        ]
+    },
+
+    Section5: {
+        Title: "Proyectos",
+        Cards: [
+            {
+                Id:1, 
+                ImgSrc: img1, 
+                Name: "Nombre del proyecto", 
+                Description: "snrhtrufyryhfvybrvyhbryhh<br>jeruybrvyuberfy", 
+                Bottons: [
+                    {Id:1, SrcImg: img1, Txt: "Button1"},
+                    {Id:2, SrcImg: img1, Txt: "Button2"}
+                ], 
+                Logos: [
+                    {Id:1, SrcImg: img1, Description: 1},
+                    {Id:2, SrcImg: img1, Description: 2},
+                    {Id:2, SrcImg: img1, Description: 3},
+                ]
+            },
+            {
+                Id:2, 
+                ImgSrc: img1, 
+                Name: "Nombre del proyecto", 
+                Paragrapht: "snrhtrufyryhfvybrvyhbryhh<br>jeruybrvyuberfy", 
+                Bottons: [
+                    {Id:1, SrcImg: img1, Txt: "Button1"},
+                    {Id:2, SrcImg: img1, Txt: "Button2"}
+                ], 
+                Logos: [
+                    {Id:1, SrcImg: img1, Description: 1},
+                    {Id:2, SrcImg: img1, Description: 2},
+                    {Id:2, SrcImg: img1, Description: 3},
+                ]
+            },
+            {
+                Id:3, 
+                ImgSrc: img1, 
+                Name: "Nombre del proyecto", 
+                Paragrapht: "snrhtrufyryhfvybrvyhbryhh<br>jeruybrvyuberfy", 
+                Bottons: [
+                    {Id:1, SrcImg: img1, Txt: "Button1"},
+                    {Id:2, SrcImg: img1, Txt: "Button2"}
+                ], 
+                Logos: [
+                    {Id:1, SrcImg: img1, Description: 1},
+                    {Id:2, SrcImg: img1, Description: 2},
+                    {Id:2, SrcImg: img1, Description: 3},
+                ]
+            },
+        ]
+    },
+
+    Section6: {
+        Title: "Contactame"
     }
 }
