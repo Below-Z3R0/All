@@ -23,7 +23,7 @@ export function Section1 ({Data}) {
                     </p>
                 </div>
 
-                <div className="Section1ContentContainerr">
+                <div className="Section1ContentContainer">
                     <div className = "Section1ParagraphtContainer">
                         <p className="Section1Paragrapht">
                             {Data.Section1.Paragrapht}
@@ -31,14 +31,14 @@ export function Section1 ({Data}) {
                     </div>
                     <div className="Section1BottonsContainer">
                         {Data.Section1.Bottons.map(BottonsItems =>
-                        <div 
-                        className="Bottons"
+                        <button
+                        className={`Bottons Botton-${BottonsItems.Id} `}
                         key = {BottonsItems.Id}
                         >
                         <p className = "Sections1BottonsTxt">
                             {BottonsItems.Txt}
                         </p>
-                    </div>
+                    </button>
                     )}
                     </div>
                 </div>

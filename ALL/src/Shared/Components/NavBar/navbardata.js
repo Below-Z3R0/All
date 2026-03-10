@@ -1,5 +1,7 @@
-import LogoImg from "./../../../assets/Img/logoimg.jpg";
+import Spanish from "./../../../assets/Img/Spanish.png";
+import English from "./../../../assets/Img/English.png";
 export const NavbarData = {
+Spanish: {
   Cards: [
     {
       Id: 1, 
@@ -33,16 +35,56 @@ export const NavbarData = {
     },
     {
       Id: 7, 
+      Title: "Proyectos", 
+      Link: "/AllProyects",
+    },
+  ],
+},
+English: {
+  Cards: [
+    {
+      Id: 1, 
+      Title: "Home", 
+      Link: "/", 
+    },
+    {
+      Id: 2, 
+      Title: "About me", 
+      Link: "/#Sobre mí",
+    },
+    {
+      Id: 3, 
+      Title: "Skills", 
+      Link: "/#Habilidades",
+    },
+    {
+      Id: 4, 
+      Title: "Training", 
+      Link: "/#Formación",
+    },
+    {
+      Id: 5, 
+      Title: "Proyects", 
+      Link: "/#Proyectos",
+    },
+    {
+      Id: 6, 
+      Title: "Contact", 
+      Link: "/#Contacto",
+    },
+    {
+      Id: 7, 
       Title: "AllProyects", 
       Link: "/AllProyects",
     },
   ],
-
-  Languages: [
-    {Id: 1, ImgSrc: LogoImg},
-    {Id: 2, ImgSrc: LogoImg},
-    {Id: 3, ImgSrc: LogoImg},
+},  
+Themes: {
+  Day: Spanish,
+  Night: English
+  },
+LanguagesLogos: [
+  {Id: 1, ImgSrc: Spanish, LogoLanguage: "Spanish"},
+  {Id: 2, ImgSrc: English, LogoLanguage: "English"}
   ],
-
-  DayOrNight: LogoImg
 }

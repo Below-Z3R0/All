@@ -23,8 +23,10 @@ function AllProyectsCard ({item}) {
 
                         <div className="LogosContainer">
                             {item.ImgsContainer.map(logoItem => 
-                            <div key = {logoItem.Logoid} className = "LogoImgContainer"
-                             onClick={() => handleLogoClick(logoItem.Description)}
+                            <div 
+                            key = {logoItem.Logoid} 
+                            className = "LogoImgContainer"
+                            onClick={() => handleLogoClick(logoItem.Description)}
                             >
                                 <img className="img" src = {logoItem.Logo}/>
                             </div>)}

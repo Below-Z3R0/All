@@ -11,14 +11,20 @@ export  function Section3 ({Data}) {
             {Data.Section3.Logos.map(Item =>
             <div 
             className="Section3LogoContainer"
-            key = {Item.id}
+            key = {Item.Id}
             >
-              <img className="Section3LogoImg"
-                src = {Item.ImgSrc}
-              />
-              <h5 className="Section3LogoTitle">
-                {Item.Names}
-              </h5>
+              <div className="Section3LogoContainer-Content">
+              <div className="Section3LogoImgContainer">
+                <img className="Section3LogoImg"
+                  src = {Item.ImgSrc}
+                />
+              </div>
+              <div className="Section3LogoTitleContainer">
+                <h5 className="Section3LogoTitle">
+                  {Item.Names}
+                </h5>
+              </div>
+              </div>
             </div>
             )}
           </div>

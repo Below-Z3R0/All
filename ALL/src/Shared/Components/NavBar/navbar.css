@@ -1,3 +1,4 @@
+/*background*/
 .NavBodyContainer {
   width: 100%;
   position: fixed;
@@ -5,57 +6,71 @@
   backdrop-filter: blur(15px);
   height: auto;
 }
-
+/*Body*/
 .NavBody {
   display: flex;
   flex-direction: row;
   max-width: 1920px;
   justify-content: space-between;
   margin: 0 auto;
-  padding: 0;
-}
-.LinksContainer {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
+  padding: .3rem;
 }
 
-.RightSide {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-
-.Links {
-  font-size: 1rem;
-  text-decoration: none;
-  color: white;
-}
-.ImgsContainer{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1px;
-
-}
-
-.ImgContainer {
-  padding: 5px;
-  display: flex;
-  height: 2rem;
-  width: 2rem;
-}
-
-.Img {
-  overflow: hidden;
-  object-fit: fill;
-  border-radius: 50px;
-}
-
+/*Logo*/
 .LeftImgContainer {
   padding: 5px;
   padding-left: 1.5rem;
   display: flex;
   height: 45px;
   width: 45px;
+}
+
+/*Botton block*/
+/*Body*/
+.RightSide {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding: 0 1.5rem 0 0;
+}
+/*LinksBlock (Words)*/
+.LinksBlock {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+/*LinkContainer (each)*/
+.LinkContainer {
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+}
+.Links {
+  font-size: 1rem;
+  text-decoration: none;
+  color: white;
+}
+/*Img Block*/
+.BttonBlock {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+
+}
+
+.BttnBlockImgContainer {
+  padding: 0;
+  display: flex;
+  height: 2rem;
+  width: 2rem;
+  border-style: hidden;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.Img {
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 50px;
 }
