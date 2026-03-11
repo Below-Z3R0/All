@@ -1,39 +1,64 @@
-/* ======================
-   Section 5 - General
-   ====================== */
+/*==================================================
+SECTION 5
+Projects Section Layout
+==================================================*/
 
-/*Body*/
+
+/*--------------------------------------------------
+SECTION CONTAINER
+Contenedor principal de la sección
+--------------------------------------------------*/
 .Section5 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #2c2b29; /* CORRECCIóN: antes faltaba # */
     padding: 3rem 1.5rem;
     box-sizing: border-box;
+    background-color: var(--background-color-primary);
+    color: var(--color-primary);
 }
 
-/*Title (dejadas vacías por si quieres estilos específicos)*/
+
+/*--------------------------------------------------
+SECTION TITLE
+Título principal de la sección
+--------------------------------------------------*/
 .SectionTitleContainer {}
+
 .Section5Title {}
 
-/*Content Block*/
+
+
+/*--------------------------------------------------
+PROJECTS CONTAINER
+Contenedor que organiza todas las cards
+--------------------------------------------------*/
 .Section5ContentBlock {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    padding: 0;               /* padding ya aplicado en .Section5 */
+    padding: 0;
     justify-content: center;
     box-sizing: border-box;
 }
 
-/* ======================
-   Cards
-   ====================== */
+
+
+/*==================================================
+PROJECT CARD
+Estructura base de cada proyecto
+==================================================*/
+
+
+/*--------------------------------------------------
+CARD CONTAINER
+Contenedor principal de cada card
+--------------------------------------------------*/
 .Section5ProyectsBody {
     display: flex;
     flex-direction: column;
     width: 24rem;
-    height: 30rem;            /* mantuve tu tamaño de card definido */
+    height: 30rem;
     border-radius: 40px;
     background-color: #1f1e1d;
     overflow: hidden;
@@ -41,23 +66,41 @@
     transition: transform .28s ease, box-shadow .28s ease;
 }
 
-/* elevación al hover (opcional, recomendado) */
+
+/*--------------------------------------------------
+CARD HOVER EFFECT
+Elevación visual al pasar el mouse
+--------------------------------------------------*/
 .Section5ProyectsBody:hover {
     transform: translateY(-6px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.45);
+    box-shadow: 0 5px 15px var(--box-shadow-color);
 }
 
-/* Imagen (alto fijo para no usar % internos) */
+
+
+/*--------------------------------------------------
+CARD IMAGE
+Imagen principal del proyecto
+--------------------------------------------------*/
 .Section5ProyectsImg {
-    height: 30%;            /* tamaño fijo y predecible */
+    height: 30%;
     width: 100%;
     object-fit: cover;
     display: block;
 }
 
-/* ======================
-   Texto (contenido principal)
-   ====================== */
+
+
+/*==================================================
+CARD CONTENT
+Contenido informativo del proyecto
+==================================================*/
+
+
+/*--------------------------------------------------
+CARD TEXT CONTAINER
+Contenedor del título y descripción
+--------------------------------------------------*/
 .Section5ProyectsTxt {
     height: 40%;
     display: flex;
@@ -65,27 +108,45 @@
     padding: 1rem;
     gap: .4rem;
     box-sizing: border-box;
-    flex: 0 0 auto;          /* ocupa su tamaño natural */
+    flex: 0 0 auto;
 }
 
+
+/*--------------------------------------------------
+PROJECT TITLE
+Título del proyecto
+--------------------------------------------------*/
 .Section5ProyectsTxtTitle {
     margin: 0;
     font-size: 1.25rem;
     font-weight: 600;
-    color: #fff;
+    color: var(--color-secundary);
 }
 
+
+/*--------------------------------------------------
+PROJECT DESCRIPTION
+Descripción breve del proyecto
+--------------------------------------------------*/
 .Section5ProyectsTxtParagrapht {
     margin: 0;
     font-size: .95rem;
     line-height: 1.4;
-    color: rgba(255,255,255,0.85);
+    color: var(--color-primary);
 }
 
-/* ======================
-   Botones y logos (pie de la card)
-   ====================== */
-/* este bloque se empuja al fondo de la card usando margin-top:auto */
+
+
+/*==================================================
+CARD ACTIONS
+Botones principales y tecnologías
+==================================================*/
+
+
+/*--------------------------------------------------
+ACTIONS CONTAINER
+Contenedor del área interactiva de la card
+--------------------------------------------------*/
 .Section5ProyectsBottonsBody {
     display: flex;
     flex-direction: column;
@@ -97,7 +158,12 @@
     box-sizing: border-box;
 }
 
-/* container de botones (centra) */
+
+
+/*--------------------------------------------------
+BUTTONS CONTAINER
+Agrupa los botones principales del proyecto
+--------------------------------------------------*/
 .Section5ProyectsBottonContainer {
     display: flex;
     justify-content: center;
@@ -106,7 +172,12 @@
     box-sizing: border-box;
 }
 
-/* botón estándar */
+
+
+/*--------------------------------------------------
+PROJECT BUTTON
+Botones DEMO / REPOSITORY
+--------------------------------------------------*/
 .Section5Button {
     width: 9rem;
     height: 2.5rem;
@@ -117,36 +188,57 @@
     border: none;
     gap: .5rem;
     cursor: pointer;
-    background-color: rgba(255,255,255,0.06);
-    color: #fff;
+    background-color: var(--background-color-secundary);
+    color: var(--color-primary);
     transition: transform .18s ease, background-color .18s ease, box-shadow .18s ease;
 }
 
-/* hover visual */
+
+/*--------------------------------------------------
+BUTTON HOVER EFFECT
+Animación del botón al interactuar
+--------------------------------------------------*/
 .Section5Button:hover {
     transform: translateY(-3px);
-    background-color: rgba(255,255,255,0.09);
-    box-shadow: 0 6px 14px rgba(0,0,0,0.35);
+    background-color: var(--background-color-primary);
+    box-shadow: 0 6px 14px var(--box-shadow-color);
 }
 
-/* icono dentro del botón */
+
+
+/*--------------------------------------------------
+BUTTON ICON
+Icono dentro del botón
+--------------------------------------------------*/
 .Section5ButtonImg {
     height: 20px;
     width: 20px;
     object-fit: cover;
 }
 
-/* texto dentro del botón */
+
+
+/*--------------------------------------------------
+BUTTON TEXT
+Texto del botón
+--------------------------------------------------*/
 .Section5ButtonTxt {
     font-size: 1rem;
     margin: 0;
 }
 
-/* ======================
-   Logos y título "Technologies"
-   ====================== */
 
-/* bloque que contiene el título y la fila (ocupando ancho completo) */
+
+/*==================================================
+TECHNOLOGIES AREA
+Logos de tecnologías usadas
+==================================================*/
+
+
+/*--------------------------------------------------
+TECH BLOCK CONTAINER
+Contenedor del título y los logos
+--------------------------------------------------*/
 .Section5ProyectsLogosAndTitleBlock {
     display: flex;
     flex-direction: column;
@@ -155,31 +247,52 @@
     gap: .35rem;
 }
 
-/* título: ajustamos padding para alinearlo con el borde izquierdo de los botones */
+
+
+/*--------------------------------------------------
+TECH TITLE CONTAINER
+Alineación del título de tecnologías
+--------------------------------------------------*/
 .Section5ProyectsLogosBlock-TitleContainer {
-    padding-left: 1.7rem;    /* sincronizar con padding en .Section5ProyectsBottonContainer */
+    padding-left: 1.7rem;
 }
 
+
+
+/*--------------------------------------------------
+TECH TITLE
+Título "Technologies"
+--------------------------------------------------*/
 .Section5ProyectsLogosBlock-Title {
     margin: 0;
     font-size: 0.9rem;
-    color: rgba(255,255,255,0.9);
+    color: var(--color-secundary);
     font-weight: 600;
 }
 
-/* fila que contiene los logos a la izquierda y el "Return" a la derecha */
+
+
+/*--------------------------------------------------
+TECH ROW
+Fila que contiene tecnologías y botón return
+--------------------------------------------------*/
 .Section5ProyectsLogosBlock {
     display: flex;
     width: 100%;
     align-items: center;
-    padding-left: 1.7rem;    /* coincide con TitleContainer para alinear todo */
+    padding-left: 1.7rem;
     padding-right: 1.7rem;
     box-sizing: border-box;
-    min-height: 40px;        /* suficiente espacio para los logos y el botón return */
+    min-height: 40px;
     justify-content: space-between;
 }
 
-/* logos: ocupan 50% del espacio disponible (lado izquierdo) */
+
+
+/*--------------------------------------------------
+TECH ICONS CONTAINER
+Contenedor de logos de tecnologías
+--------------------------------------------------*/
 .Section5ProyectsLogosContainer {
     display: flex;
     align-items: center;
@@ -188,7 +301,12 @@
     box-sizing: border-box;
 }
 
-/* cada logo como botón (sin background por defecto) */
+
+
+/*--------------------------------------------------
+TECH ICON BUTTON
+Botón que contiene cada logo
+--------------------------------------------------*/
 .Section5Logo {
     display: inline-flex;
     align-items: center;
@@ -199,6 +317,12 @@
     cursor: default;
 }
 
+
+
+/*--------------------------------------------------
+TECH ICON IMAGE
+Imagen del logo de tecnología
+--------------------------------------------------*/
 .Section5LogoImg {
     height: 20px;
     width: 20px;
@@ -206,11 +330,18 @@
     display: block;
 }
 
-/* ======================
-   Return (lado derecho de la fila)
-   ====================== */
 
-/* Return container ocupa el 50% derecho; lo alineamos a la derecha */
+
+/*==================================================
+RETURN BUTTON
+Botón para regresar al estado anterior
+==================================================*/
+
+
+/*--------------------------------------------------
+RETURN CONTAINER
+Alineación del botón return
+--------------------------------------------------*/
 .Section5ProyectsReturnContainer {
     width: 50%;
     display: flex;
@@ -218,7 +349,12 @@
     box-sizing: border-box;
 }
 
-/* boton return */
+
+
+/*--------------------------------------------------
+RETURN BUTTON
+Botón interactivo de retorno
+--------------------------------------------------*/
 .Section5Return {
     display: inline-flex;
     justify-content: center;
@@ -227,23 +363,56 @@
     height: 2rem;
     border-radius: 6px;
     border: none;
-    background-color: rgba(255,255,255,0.04);
+    background-color: var(--background-color-primary);
     cursor: pointer;
     transition: transform .16s ease, background-color .16s ease;
 }
 
+
+
+/*--------------------------------------------------
+RETURN HOVER
+Animación del botón return
+--------------------------------------------------*/
 .Section5Return:hover {
     transform: translateY(-2px);
-    background-color: rgba(255,255,255,0.07);
+    background-color: var(--background-color-primary);
 }
 
+
+
+/*--------------------------------------------------
+RETURN TEXT
+Texto dentro del botón return
+--------------------------------------------------*/
 .Section5ReturnTxt {
     margin: 0;
     font-size: .85rem;
-    color: #fff;
+    color: var(--color-primary);
 }
 
-/* ======================
-   Responsive adjustments
-   ====================== */
 
+
+/*==================================================
+Temas
+Colores de cada elemento
+==================================================*/
+.Theme-Day{
+    --background-color-primary: #ac8156;
+    --background-color-secundary: #ac8156;
+    --box-shadow-color: #1f1e1d;
+    --color-primary: #1f1e1d;
+    --color-secundary: #ac8156;
+}
+
+.Theme-Night {
+    --background-color-primary: #2c2b29;
+    --background-color-secundary: #1f1e1d;
+    --box-shadow-color: rgba(0,0,0,0.45);
+    --color-primary: rgba(255,255,255,0.85);
+    --color-secundary: ;
+}
+/*==================================================
+RESPONSIVE
+Ajustes para pantallas pequeñas
+==================================================*/

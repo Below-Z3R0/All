@@ -1,32 +1,61 @@
-/*Body*/
+/*==================================================
+SECTION 2
+About Section Layout
+==================================================*/
+
+
+/*--------------------------------------------------
+SECTION CONTAINER
+Contenedor principal de la sección
+--------------------------------------------------*/
 .Section2 {
     height: auto;
     max-height: 55rem;
-    background-color: #1f1e1d;
+    background-color: var(--background-color-secundary);
 }
-
 
 .Section2TitleTxt {}
 
 
-/*Content Block*/
+/*==================================================
+CONTENT
+Contenido principal
+==================================================*/
+
+
+/*--------------------------------------------------
+CONTENT BLOCK
+Bloque que contiene imagen y texto
+--------------------------------------------------*/
 .Section2ContentBlock {
     display: flex;
 }
-/*Img*/
+
+
+/*--------------------------------------------------
+IMAGE
+Imagen de la sección
+--------------------------------------------------*/
 .Section2ImgContainer {
     display: flex;
     padding-top: 5rem;
+    box-sizing: border-box;
     justify-content: center;
     width: 50%;
 }
+
 .Section2Img {
     width: 500px;
     object-fit: cover;
     height: 500px;
     overflow: hidden;
 }
-/*Txt*/
+
+
+/*--------------------------------------------------
+TEXT CONTENT
+Contenido textual
+--------------------------------------------------*/
 .Section2TxtContainer {
     display: flex;
     flex-direction: column;
@@ -34,11 +63,15 @@
     gap: 2rem;
     padding-top: 10rem;
 }
+
 .Section2TxtTitle {
     margin: 0px;
     font-size: 2rem;
+    color: var(--color-primary);
 }
+
 .Section2TxtParagrapht {
     margin: 0px;
     font-size: 1.3rem;
+    color: var(--color-primary);
 }

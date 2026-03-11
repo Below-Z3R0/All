@@ -1,13 +1,13 @@
-import CSS3 from "../../../assets/Img/CSS3.jpg";
-import Git from "../../../assets/Img/GIT.png";
-import GitHub from "../../../assets/Img/GITHUB.jpg";
-import Gmail from "../../../assets/Img/Gmail.jpg";
-import HTML5 from "../../../assets/Img/HTML5.webp";
-import JavaScript from "../../../assets/Img/JavaScript.webp";
-import LinkedIn from "../../../assets/Img/LinkedIn.png";
+import CSS3 from "../../../assets/Img/CSS3V2.svg";
+import Git from "../../../assets/Img/GitV2.svg";
+import GitHub from "../../../assets/Img/GitHubV2.png";
+import Gmail from "../../../assets/Img/GmailV2.svg";
+import HTML5 from "../../../assets/Img/HTML5V2.svg";
+import JavaScript from "../../../assets/Img/JavaScriptV2.svg";
+import LinkedIn from "../../../assets/Img/LinkedInV2.svg";
 import LogoUtp from "../../../assets/Img/LogoUtp.png";
-import Ojo from "../../../assets/Img/Ojo.png"
-import React from "../../../assets/Img/React.png";
+import Demo from "../../../assets/Img/DEMOV2.svg"
+import React from "../../../assets/Img/ReactV2.svg";
 export const CvData = {
 Spanish: {
         Section1: {
@@ -18,7 +18,7 @@ Spanish: {
         ImgSrc: LinkedIn,
         Contact: [
         {Id: 1, ImgSrc: Gmail},
-        {Id: 2, ImgSrc: Git},
+        {Id: 2, ImgSrc: GitHub},
         {Id: 3, ImgSrc: LinkedIn},
         ],
         Bottons: [
@@ -60,7 +60,7 @@ Spanish: {
                 Name: "Portafolio", 
                 Description: "Portafolio Web con react router, desarrollado de manera responsive e interactiva", 
                 Bottons: [
-                    {Id:1, SrcImg: Ojo, Txt: "DEMO"},
+                    {Id:1, SrcImg: Demo, Txt: "DEMO"},
                     {Id:2, SrcImg: GitHub, Txt: "REPO"}
                 ], 
                 Logos: [
@@ -129,7 +129,7 @@ English: {
                 Name: "Portafolio", 
                 Description: "Portafolio Web con react router, desarrollado de manera responsive e interactiva", 
                 Bottons: [
-                    {Id:1, SrcImg: Ojo, Txt: "DEMO"},
+                    {Id:1, SrcImg: Demo, Txt: "DEMO"},
                     {Id:2, SrcImg: GitHub, Txt: "REPO"}
                 ], 
                 Logos: [

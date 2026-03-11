@@ -1,13 +1,32 @@
-/*Body*/
+/*==================================================
+SECTION 3
+Skills Section Layout
+==================================================*/
+
+
+/*--------------------------------------------------
+SECTION CONTAINER
+Contenedor principal
+--------------------------------------------------*/
 .Section3 {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-color: #2c2b29;
+    background-color: var(--background-color-primary);
 }
 
-/*Content block*/
+
+/*==================================================
+CONTENT
+Bloque de logos de habilidades
+==================================================*/
+
+
+/*--------------------------------------------------
+CONTENT BLOCK
+Contenedor de los logos
+--------------------------------------------------*/
 .Section3Contentblock {
     display: flex;
     justify-content: center;
@@ -16,7 +35,12 @@
     width: 40%;
     gap: 2rem;
 }
-/*Logos*/
+
+
+/*--------------------------------------------------
+LOGO CARD
+Tarjeta de cada tecnología
+--------------------------------------------------*/
 .Section3LogoContainer {
     display: flex;
     flex-direction: column;
@@ -24,14 +48,21 @@
     height: 9rem;
     padding: 1rem;
     border-radius: 20px;
-    background-color: #1f1e1d;
+    background-color: var(--background-color-secundary);
     box-sizing: border-box;
 }
+
 .Section3LogoContainer-Content {
     width: 100%;
     height: 100%;
     gap: 10px;
 }
+
+
+/*--------------------------------------------------
+LOGO IMAGE
+Imagen del logo
+--------------------------------------------------*/
 .Section3LogoImgContainer {
     width: 100%;
     display: flex;
@@ -40,11 +71,18 @@
     height: 77.5%;
     overflow: hidden;
 }
+
 .Section3LogoImg {
     object-fit: cover;
     margin: 0px;
     overflow: hidden;
 }
+
+
+/*--------------------------------------------------
+LOGO TITLE
+Nombre de la tecnología
+--------------------------------------------------*/
 .Section3LogoTitleContainer {
     width: 100%;
     height: 17.5%;
@@ -52,7 +90,9 @@
     flex-direction: column;
     align-items: center;
 }
+
 .Section3LogoTitle {
     height: 100%;
     margin: 5% 0px 0px 0px;
+    color: var(--color-primary);
 }

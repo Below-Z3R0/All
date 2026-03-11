@@ -1,5 +1,5 @@
-import Spanish from "./../../../assets/Img/Spanish.png";
-import English from "./../../../assets/Img/English.png";
+import Spanish from "./../../../assets/Img/SpainV2.png";
+import English from "./../../../assets/Img/UnitedKingDomV2.png";
 export const NavbarData = {
 Spanish: {
   Cards: [

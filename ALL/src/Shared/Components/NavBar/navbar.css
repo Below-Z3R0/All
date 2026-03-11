@@ -1,12 +1,33 @@
-/*background*/
+/*==================================================
+NAVBAR
+Navigation Bar Layout
+==================================================*/
+
+
+/*--------------------------------------------------
+NAVBAR CONTAINER
+Contenedor principal fijo del navbar
+--------------------------------------------------*/
 .NavBodyContainer {
   width: 100%;
   position: fixed;
-  background: rgba(41, 41, 41, 0);
+  background: var(--background-color-primary);
   backdrop-filter: blur(15px);
   height: auto;
 }
-/*Body*/
+
+
+
+/*==================================================
+NAVBAR BODY
+Estructura principal del navbar
+==================================================*/
+
+
+/*--------------------------------------------------
+NAVBAR FLEX CONTAINER
+Contenedor interno que organiza logo y menú
+--------------------------------------------------*/
 .NavBody {
   display: flex;
   flex-direction: row;
@@ -16,7 +37,18 @@
   padding: .3rem;
 }
 
-/*Logo*/
+
+
+/*==================================================
+LOGO
+Logo del portafolio
+==================================================*/
+
+
+/*--------------------------------------------------
+LOGO CONTAINER
+Contenedor del logo en el lado izquierdo
+--------------------------------------------------*/
 .LeftImgContainer {
   padding: 5px;
   padding-left: 1.5rem;
@@ -25,40 +57,89 @@
   width: 45px;
 }
 
-/*Botton block*/
-/*Body*/
+
+
+/*==================================================
+RIGHT SIDE
+Contenedor del menú y botones
+==================================================*/
+
+
+/*--------------------------------------------------
+RIGHT CONTAINER
+Contenedor general del lado derecho
+--------------------------------------------------*/
 .RightSide {
   display: flex;
   flex-direction: row;
   gap: 30px;
   padding: 0 1.5rem 0 0;
 }
-/*LinksBlock (Words)*/
+
+
+
+/*==================================================
+NAVIGATION LINKS
+Links principales de navegación
+==================================================*/
+
+
+/*--------------------------------------------------
+LINKS BLOCK
+Contenedor que agrupa los links
+--------------------------------------------------*/
 .LinksBlock {
   display: flex;
   flex-direction: row;
   gap: 40px;
 }
-/*LinkContainer (each)*/
+
+
+/*--------------------------------------------------
+LINK CONTAINER
+Contenedor individual de cada link
+--------------------------------------------------*/
 .LinkContainer {
   font-size: 1rem;
   text-decoration: none;
-  color: white;
+  color: var(--color-primary);
 }
+
+
+/*--------------------------------------------------
+NAV LINK
+Texto del link de navegación
+--------------------------------------------------*/
 .Links {
   font-size: 1rem;
   text-decoration: none;
-  color: white;
+  color: var(--color-primary);
 }
-/*Img Block*/
+
+
+
+/*==================================================
+BUTTON AREA
+Área de botones o iconos
+==================================================*/
+
+
+/*--------------------------------------------------
+BUTTON BLOCK
+Contenedor de botones o iconos
+--------------------------------------------------*/
 .BttonBlock {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 10px;
-
 }
 
+
+/*--------------------------------------------------
+BUTTON ICON CONTAINER
+Contenedor de iconos interactivos
+--------------------------------------------------*/
 .BttnBlockImgContainer {
   padding: 0;
   display: flex;
@@ -66,9 +147,14 @@
   width: 2rem;
   border-style: hidden;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: transparent;
 }
 
+
+/*--------------------------------------------------
+BUTTON ICON IMAGE
+Imagen dentro del botón
+--------------------------------------------------*/
 .Img {
   overflow: hidden;
   object-fit: cover;

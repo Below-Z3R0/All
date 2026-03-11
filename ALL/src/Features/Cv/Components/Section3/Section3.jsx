@@ -1,7 +1,7 @@
 import "./Section3.css";
-export  function Section3 ({Data}) {
+export  function Section3 ({Data, Theme}) {
   return (
-    <div className = "Section Section3">
+    <div className = {`Section Section3 Theme-${Theme}`}>
           <div className="SectionTitleContainer">
             <h1 className="Section3Title">
               {Data.Section3.Title}

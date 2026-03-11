@@ -1,14 +1,14 @@
 import "./navbar.css";
 import { NavbarData } from "./navbardata.js";
 import { Link } from "react-router-dom";
-import { useLanguageContext } from "../../Context/LanguageContext/LanguageContextHook.jsx";
-import { useThemeContext } from "../../Context/ThemeContext/ThemeContextHook.jsx";
+import { useLanguageContext } from "../../../Shared/Hooks/LanguageContext/HookLanguageContext.jsx";
+import { useThemeContext } from "../../../Shared/Hooks/ThemeContext/HookThemeContext.jsx";
 
 export function NavBar () {
   const { Theme, ToggleTheme } = useThemeContext();
   const { Language, ToggleLanguage } = useLanguageContext();
   return(
-    <div className="NavBodyContainer">
+    <div className={`NavBodyContainer Theme-${Theme}`}>
       <div className="Section NavBody  ">
         <div className="LeftImgContainer">
           <img src= {NavbarData.Themes[Theme]} className="Img"/>

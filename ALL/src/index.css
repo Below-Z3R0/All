@@ -11,6 +11,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
 body {
@@ -30,4 +31,46 @@ body {
   display: flex;
   justify-content: center;
   margin: 0 0 2rem 0;
+}
+
+.Theme-Day{
+  /* Backgrounds */
+    --background-color-primary: #F5F7FA;
+    --background-color-secundary: #E8ECF1;
+    --background-color-card: #FFFFFF;
+    /* Borders */
+    --border-color: #D3D8E1;
+    /* Text */
+    --color-primary: #1A1D23;
+    --color-secundary: #4A5568;
+    --color-tertiary: #7B8794;
+    /* UI Colors */
+    --color-accent-primary: #2563EB;
+    --color-accent-secondary: #14B8A6;
+    --color-highlight: #F59E0B;
+    /* Layout elements */
+    --navbar-color: #F1F4F8;
+    /* Shadows */
+    --box-shadow-color: rgba(0,0,0,0.15);
+}
+
+.Theme-Night{
+  /* Backgrounds */
+    --background-color-primary: #0F1115;
+    --background-color-secundary: #242830;
+    --background-color-card: #1A1D23;
+    /* Borders */
+    --border-color: #2F343D;
+    /* Text */
+    --color-primary: #E6EAF0;
+    --color-secundary: #B4BBC6;
+    --color-tertiary: #7D8592;
+    /* UI Colors */
+    --color-accent-primary: #4DA3FF;
+    --color-accent-secondary: #2DD4BF;
+    --color-highlight: #F59E0B;
+    /* Layout elements */
+    --navbar-color: #101317;
+    /* Shadows */
+    --box-shadow-color: rgba(0,0,0,0.45);
 }

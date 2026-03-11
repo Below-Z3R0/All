@@ -1,7 +1,7 @@
 import "./Section1.css";
-export function Section1 ({Data}) {
+export function Section1 ({Data, Theme}) {
     return (                  
-        <div className = "Section Section1" >
+        <div className = {`Section Section1 Theme-${Theme}`} >
             <div className="Section1Contactblock">
                 <div className="Section1ImgContactContainer">
                 {Data.Section1.Contact.map(Item =>

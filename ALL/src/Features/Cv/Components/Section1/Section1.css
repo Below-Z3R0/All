@@ -1,42 +1,77 @@
-/*Body of the Section*/
+/*==================================================
+SECTION 1
+Hero Section Layout
+==================================================*/
+
+
+/*--------------------------------------------------
+SECTION CONTAINER
+Contenedor principal de la sección
+--------------------------------------------------*/
 .Section1 {
     display: flex;
     padding: 1rem 0rem 5rem 0rem;
     height: 100vh;
     max-height: 60rem;
-    background-color: #2c2b29;
+    background-color: var(--background-color-primary);
     box-sizing: border-box;
 }
 
 
-/*Contacts logos block*/
+/*==================================================
+CONTACTS
+Bloque de logos de contacto
+==================================================*/
+
+
+/*--------------------------------------------------
+CONTACTS CONTAINER
+Contenedor lateral de contactos
+--------------------------------------------------*/
 .Section1Contactblock {
     display: flex;
     flex-direction: row-reverse;
-    align-items: flex-end;
+    align-items: end;
+    justify-content: center;
     width: 5%;
 }
+
 .Section1ImgContactContainer {
     display: flex;
     flex-direction: column;
-    margin-right: 1.3rem;
     gap: 1rem;
-    padding: auto;
 }
+
+
+/*--------------------------------------------------
+CONTACT ICON
+Iconos de redes o contacto
+--------------------------------------------------*/
 .Section1ImgContacts {
-    width: 1.3rem;
-    height: 1.3rem;
-    object-fit: cover;
+    width: 1.5rem;
+    height: 1.5rem;
+    filter: grayscale(100%) brightness(1);
+    transition: filter .3s ease, transform .2s ease;
 }
+
 .Section1ImgContacts:hover {
     overflow: visible;
-    transform: translateY(-1px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.45);
+    filter: grayscale(0%);
+    transform: scale(1.5)
 }
-/*Logo's img*/
 
 
-/*Txt content block */
+
+/*==================================================
+TEXT CONTENT
+Contenido principal del Hero
+==================================================*/
+
+
+/*--------------------------------------------------
+CONTENT CONTAINER
+Bloque principal de texto
+--------------------------------------------------*/
 .Section1Content{
     display: flex;
     flex-direction: column;
@@ -44,39 +79,74 @@
     padding-left: 4rem;
     width: 45%;
 }
-/*Titles*/
+
+
+/*--------------------------------------------------
+TITLES
+Títulos principales
+--------------------------------------------------*/
 .Section1TitlesContainer {
     display: flex;
     flex-direction: column;
 }
+
 .Section1Title1 {
     margin: 0px;
     font-size: 2rem;
+    color: var(--color-primary);
 }
+
 .Section1Title2{
     margin: 0px;
     font-size: 3rem;
+    color: var(--color-primary);
 }
 
 
-/*Paragrapht & bottons container*/
+/*==================================================
+TEXT & BUTTONS
+Descripción y botones
+==================================================*/
+
+
+/*--------------------------------------------------
+CONTENT WRAPPER
+Agrupa texto y botones
+--------------------------------------------------*/
 .Section1ContentContainer {
     display: flex;
     flex-direction: column;
 }
-/*Paragrapht*/
+
+
+/*--------------------------------------------------
+PARAGRAPH
+Texto descriptivo
+--------------------------------------------------*/
 .Section1ParagraphtContainer{
     display: flex;
     flex-wrap: wrap;
 }
-.Section1Paragrapht{
 
+.Section1Paragrapht{
+    color: var(--color-primary);
 }
-/*Bottons*/
+
+
+/*--------------------------------------------------
+BUTTONS CONTAINER
+Contenedor de botones
+--------------------------------------------------*/
 .Section1BottonsContainer {
     gap: 2rem;
     display: flex;
 }
+
+
+/*--------------------------------------------------
+BUTTON BASE
+Estilo base de botones
+--------------------------------------------------*/
 .Bottons{
     display: flex;
     justify-content: center;
@@ -86,24 +156,39 @@
     border-style: hidden;
     padding: 0px;
 }
+
 .Bottons:hover {
     transform: translateY(-1px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.45);
+    box-shadow: 0 10px 20px var(--box-shadow-color);
+    filter: grayscale( 1.2 );
 }
 
+
+/*--------------------------------------------------
+BUTTON VARIANTS
+Variantes de botón
+--------------------------------------------------*/
 .Botton-1 {
     background-color: transparent;
     border-style:solid ;
     border-width: .05rem;
-    border-color: beige;
-    color: beige;
+    border-color: var(--color-primary);
+    color: var(--color-primary);
 }
-.Botton-2 {
+
+.Botton-1:hover {
     background-color: transparent;
     border-style:solid ;
     border-width: .05rem;
-    background-color: rgb(197, 197, 178);
-    color: #2c2b29;
+    border-color: var(--color-primary);
+    color: var(--color-primary);
+}
+
+.Botton-2 {
+    border-style:solid ;
+    border-width: .05rem;
+    background-color: var(--background-color-secundary);
+    color: var(--color-primary);
 }
 
 .Sections1BottonsTxt{
@@ -114,7 +199,16 @@
 }
 
 
-/*Img*/
+/*==================================================
+IMAGE
+Imagen principal
+==================================================*/
+
+
+/*--------------------------------------------------
+IMAGE CONTAINER
+Contenedor de la imagen
+--------------------------------------------------*/
 .Section1ImgContainer {
     display: flex;
     flex-direction: row;
@@ -123,7 +217,9 @@
     height: 100%;
     width: 55%;
     padding-left: 5%;
+    box-sizing: border-box;
 }
+
 .Section1Img {
     max-width: 80%;
     max-height: 100%;
