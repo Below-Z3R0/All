@@ -14,7 +14,9 @@ Contenedor principal de la sección
     background-color: var(--background-color-secundary);
 }
 
-.Section2TitleTxt {}
+.Section2TitleTxt {
+    color: var(--color-tertiary);
+}
 
 
 /*==================================================
@@ -67,11 +69,11 @@ Contenido textual
 .Section2TxtTitle {
     margin: 0px;
     font-size: 2rem;
-    color: var(--color-primary);
+    color: var(--color-accent-primary);
 }
 
 .Section2TxtParagrapht {
     margin: 0px;
-    font-size: 1.3rem;
+    font-size: 1rem;
     color: var(--color-primary);
 }

@@ -60,7 +60,9 @@ Contenedor principal de cada card
     width: 24rem;
     height: 30rem;
     border-radius: 40px;
-    background-color: #1f1e1d;
+    border-style: hidden;
+    background-color: var(--background-color-card);
+    box-shadow:0 10px 30px var(--box-shadow-color);
     overflow: hidden;
     box-sizing: border-box;
     transition: transform .28s ease, box-shadow .28s ease;
@@ -74,6 +76,9 @@ Elevación visual al pasar el mouse
 .Section5ProyectsBody:hover {
     transform: translateY(-6px);
     box-shadow: 0 5px 15px var(--box-shadow-color);
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--color-accent-primary);
 }
 
 
@@ -188,11 +193,17 @@ Botones DEMO / REPOSITORY
     border: none;
     gap: .5rem;
     cursor: pointer;
-    background-color: var(--background-color-secundary);
+    background-color: var(--color-accent-primary);
     color: var(--color-primary);
-    transition: transform .18s ease, background-color .18s ease, box-shadow .18s ease;
+    transition: transform .18s ease, background-color .18s ease;
 }
 
+.Section5Button-2 {
+    background-color: transparent;
+    border-style: solid;
+    border-color: var(--color-accent-primary);
+    color: var(--color-accent-primary);
+}
 
 /*--------------------------------------------------
 BUTTON HOVER EFFECT
@@ -200,8 +211,7 @@ Animación del botón al interactuar
 --------------------------------------------------*/
 .Section5Button:hover {
     transform: translateY(-3px);
-    background-color: var(--background-color-primary);
-    box-shadow: 0 6px 14px var(--box-shadow-color);
+    filter:brightness(0.7) ;
 }
 
 
@@ -328,8 +338,14 @@ Imagen del logo de tecnología
     width: 20px;
     object-fit: cover;
     display: block;
+    filter: grayscale(100%) brightness(1);
+    transition: filter .3s ease, transform .2s ease;
 }
-
+.Section5LogoImg:hover {
+    overflow: visible;
+    filter: grayscale(0%);
+    transform: scale(1.5)
+}
 
 
 /*==================================================
@@ -363,12 +379,11 @@ Botón interactivo de retorno
     height: 2rem;
     border-radius: 6px;
     border: none;
-    background-color: var(--background-color-primary);
+    background-color: var(--color-accent-primary);
     cursor: pointer;
+    filter: grayscale(100%);
     transition: transform .16s ease, background-color .16s ease;
 }
-
-
 
 /*--------------------------------------------------
 RETURN HOVER
@@ -376,10 +391,10 @@ Animación del botón return
 --------------------------------------------------*/
 .Section5Return:hover {
     transform: translateY(-2px);
-    background-color: var(--background-color-primary);
+    background-color: var(--color-accent-primary);
+    filter: grayscale(0%);
+    transform: scale(1.2)
 }
-
-
 
 /*--------------------------------------------------
 RETURN TEXT
@@ -391,27 +406,6 @@ Texto dentro del botón return
     color: var(--color-primary);
 }
 
-
-
-/*==================================================
-Temas
-Colores de cada elemento
-==================================================*/
-.Theme-Day{
-    --background-color-primary: #ac8156;
-    --background-color-secundary: #ac8156;
-    --box-shadow-color: #1f1e1d;
-    --color-primary: #1f1e1d;
-    --color-secundary: #ac8156;
-}
-
-.Theme-Night {
-    --background-color-primary: #2c2b29;
-    --background-color-secundary: #1f1e1d;
-    --box-shadow-color: rgba(0,0,0,0.45);
-    --color-primary: rgba(255,255,255,0.85);
-    --color-secundary: ;
-}
 /*==================================================
 RESPONSIVE
 Ajustes para pantallas pequeñas

@@ -20,10 +20,14 @@ function ProjectCard({ item }) {
             <div className="Section5ProyectsBottonsBody">
                 <div className="Section5ProyectsBottonContainer">
                     {item.Bottons.map(BottonsItem => (
-                        <button className="Section5Button" key={BottonsItem.Id}>
+                        <a 
+                        className={`Section5Button Section5Button-${BottonsItem.Id} Link`} 
+                        key={BottonsItem.Id}
+                        href={BottonsItem.Link}
+                        >
                             <img className="Section5ButtonImg" src={BottonsItem.SrcImg} alt="button" />
                             <p className="Section5ButtonTxt">{BottonsItem.Txt}</p>
-                        </button>
+                        </a>
                     ))}
                 </div>
                 
@@ -60,10 +64,9 @@ function ProjectCard({ item }) {
     );
 }
 
-// Componente principal Section5
-export function Section5({ Data, Theme }) { 
+export function Section5({ Data}) { 
     return (
-        <div className={`Section Section5 Theme-${Theme}`}>
+        <div className= "Section Section5" id="proyectos">
             <div className="SectionTitleContainer">
                 <h1 className="Section5Title">{Data.Section5.Title}</h1>
             </div>

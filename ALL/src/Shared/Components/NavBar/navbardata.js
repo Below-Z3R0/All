@@ -1,5 +1,8 @@
 import Spanish from "./../../../assets/Img/SpainV2.png";
 import English from "./../../../assets/Img/UnitedKingDomV2.png";
+import Sol from "../../../assets/Img/SolV1.svg";
+import Luna from "../../../assets/Img/LunaV1.svg";
+
 export const NavbarData = {
 Spanish: {
   Cards: [
@@ -11,32 +14,27 @@ Spanish: {
     {
       Id: 2, 
       Title: "Sobre mí", 
-      Link: "/#Sobre mí",
+      Link: "#sobremi",
     },
     {
       Id: 3, 
       Title: "Habilidades", 
-      Link: "/#Habilidades",
+      Link: "#habilidades",
     },
     {
       Id: 4, 
       Title: "Formación", 
-      Link: "/#Formación",
+      Link: "#formación",
     },
     {
       Id: 5, 
       Title: "Proyectos", 
-      Link: "/#Proyectos",
+      Link: "#proyectos",
     },
     {
       Id: 6, 
       Title: "Contacto", 
-      Link: "/#Contacto",
-    },
-    {
-      Id: 7, 
-      Title: "Proyectos", 
-      Link: "/AllProyects",
+      Link: "#contacto",
     },
   ],
 },
@@ -50,27 +48,27 @@ English: {
     {
       Id: 2, 
       Title: "About me", 
-      Link: "/#Sobre mí",
+      Link: "#sobremi",
     },
     {
       Id: 3, 
       Title: "Skills", 
-      Link: "/#Habilidades",
+      Link: "#habilidades",
     },
     {
       Id: 4, 
       Title: "Training", 
-      Link: "/#Formación",
+      Link: "#formación",
     },
     {
       Id: 5, 
       Title: "Proyects", 
-      Link: "/#Proyectos",
+      Link: "#proyectos",
     },
     {
       Id: 6, 
       Title: "Contact", 
-      Link: "/#Contacto",
+      Link: "#contacto",
     },
     {
       Id: 7, 
@@ -80,8 +78,8 @@ English: {
   ],
 },  
 Themes: {
-  Day: Spanish,
-  Night: English
+  Day: Sol,
+  Night: Luna
   },
 LanguagesLogos: [
   {Id: 1, ImgSrc: Spanish, LogoLanguage: "Spanish"},

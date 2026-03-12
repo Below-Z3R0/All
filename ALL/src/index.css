@@ -13,13 +13,17 @@
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   min-width: 320px;
   min-height: 100vh;
   margin: 0;
 }
-
+a {
+  text-decoration: none;
+}
 .Section{
   max-width: 1920px;
   width: 100%;
@@ -28,49 +32,62 @@ body {
 }
 
 .SectionTitleContainer{
+  color: var(--color-primary);
   display: flex;
   justify-content: center;
   margin: 0 0 2rem 0;
 }
 
-.Theme-Day{
-  /* Backgrounds */
-    --background-color-primary: #F5F7FA;
-    --background-color-secundary: #E8ECF1;
-    --background-color-card: #FFFFFF;
-    /* Borders */
-    --border-color: #D3D8E1;
-    /* Text */
-    --color-primary: #1A1D23;
-    --color-secundary: #4A5568;
-    --color-tertiary: #7B8794;
-    /* UI Colors */
-    --color-accent-primary: #2563EB;
-    --color-accent-secondary: #14B8A6;
-    --color-highlight: #F59E0B;
-    /* Layout elements */
-    --navbar-color: #F1F4F8;
-    /* Shadows */
-    --box-shadow-color: rgba(0,0,0,0.15);
+.Theme-Day {
+  /* BASE BACKGROUNDS */
+  --background-color-primary: #ddd2c4;
+  --background-color-secundary: #e3e2e1;
+  --background-color-card: #CBB9A4;
+
+  /* BORDERS */
+  --border-color: #CBB9A4;
+
+  /* TEXT */
+  --color-primary: #0C1519;      /* Texto principal (muy oscuro) */
+  --color-secundary: #162127;    /* Texto secundario */
+  --color-tertiary: #3A3534;     /* Texto terciario */
+
+  /* ACCENT */
+  --color-accent-primary: #7e6251;  /* Botones principales, enlaces */
+  --color-accent-secondary: #cf9d7b11; /* Elementos secundarios */
+  --color-highlight: #724B39;        /* Mismo que primario para resaltar */
+
+  /* NAVBAR */
+  --navbar-color: rgba(250, 249, 246, 0.8);
+
+  /* SHADOW */
+  --box-shadow-color: rgba(12, 21, 25, 0.1);
 }
 
-.Theme-Night{
-  /* Backgrounds */
-    --background-color-primary: #0F1115;
-    --background-color-secundary: #242830;
-    --background-color-card: #1A1D23;
-    /* Borders */
-    --border-color: #2F343D;
-    /* Text */
-    --color-primary: #E6EAF0;
-    --color-secundary: #B4BBC6;
-    --color-tertiary: #7D8592;
-    /* UI Colors */
-    --color-accent-primary: #4DA3FF;
-    --color-accent-secondary: #2DD4BF;
-    --color-highlight: #F59E0B;
-    /* Layout elements */
-    --navbar-color: #101317;
-    /* Shadows */
-    --box-shadow-color: rgba(0,0,0,0.45);
+.Theme-Night {
+  /* BASE BACKGROUNDS */
+  --background-color-primary: #2b2827;
+  --background-color-secundary: #322f2d;
+  --background-color-card: #3e3a38;
+
+  /* BORDERS */
+  --border-color: #724B39;
+
+  /* TEXT */
+  --color-primary: #FAF9F6;      /* Texto principal (muy claro) */
+  --color-secundary: #F4F1EA;
+  --color-tertiary: #FAF9F6;
+
+  /* ACCENT */
+  --color-accent-primary: #a28273;  /* Destacados */
+  --color-accent-secondary: #96765750;
+  --color-highlight: #3a2b224e;       /* Mismo que primario */
+
+  /* NAVBAR */
+  --navbar-color: rgba(12, 21, 25, 0.85);
+
+  /* SHADOW */
+  --box-shadow-color: rgba(0, 0, 0, 0.5);
+  --color-txt-formulary: rgba(255, 255, 255, 0.523);
 }
+

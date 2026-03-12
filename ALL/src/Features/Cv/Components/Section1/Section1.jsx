@@ -1,15 +1,22 @@
 import "./Section1.css";
-export function Section1 ({Data, Theme}) {
+import { Link } from "react-router-dom";
+
+export function Section1 ({Data}) {
     return (                  
-        <div className = {`Section Section1 Theme-${Theme}`} >
+        <div className = "Section Section1" id="sobremi">
             <div className="Section1Contactblock">
                 <div className="Section1ImgContactContainer">
                 {Data.Section1.Contact.map(Item =>
+                  <a
+                  key = {Item.Id} 
+                  href={Item.Link} 
+                  target="_blank"
+                  >
                     <img 
-                    key = {Item.Id}
                     src={Item.ImgSrc}
                     className = "Section1ImgContacts"
                     />
+                   </a> 
                 )}
                 </div>
             </div>
@@ -30,15 +37,14 @@ export function Section1 ({Data, Theme}) {
                         </p>
                     </div>
                     <div className="Section1BottonsContainer">
-                        {Data.Section1.Bottons.map(BottonsItems =>
-                        <button
-                        className={`Bottons Botton-${BottonsItems.Id} `}
-                        key = {BottonsItems.Id}
-                        >
+                    {Data.Section1.Bottons.map(BottonsItems =>
+                    <a key = {BottonsItems.Id} 
+                    className={`Bottons Botton-${BottonsItems.Id} LinkContainer`}
+                    href={BottonsItems.Link}>
                         <p className = "Sections1BottonsTxt">
                             {BottonsItems.Txt}
                         </p>
-                    </button>
+                    </a >
                     )}
                     </div>
                 </div>

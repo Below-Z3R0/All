@@ -116,6 +116,7 @@ Agrupa texto y botones
 .Section1ContentContainer {
     display: flex;
     flex-direction: column;
+    font-size: smaller;
 }
 
 
@@ -155,12 +156,15 @@ Estilo base de botones
     height: 2.5rem;
     border-style: hidden;
     padding: 0px;
+    background-color: var(--background-color-card);
+    color: var(--color-accent-primary);
 }
 
 .Bottons:hover {
     transform: translateY(-1px);
     box-shadow: 0 10px 20px var(--box-shadow-color);
     filter: grayscale( 1.2 );
+    color: var(--color-primary);
 }
 
 
@@ -172,8 +176,8 @@ Variantes de botón
     background-color: transparent;
     border-style:solid ;
     border-width: .05rem;
-    border-color: var(--color-primary);
-    color: var(--color-primary);
+    border-color: var(--color-accent-primary);
+    color: var(--color-accent-primary);
 }
 
 .Botton-1:hover {
@@ -184,12 +188,6 @@ Variantes de botón
     color: var(--color-primary);
 }
 
-.Botton-2 {
-    border-style:solid ;
-    border-width: .05rem;
-    background-color: var(--background-color-secundary);
-    color: var(--color-primary);
-}
 
 .Sections1BottonsTxt{
     display: flex;

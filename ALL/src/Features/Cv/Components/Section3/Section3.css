@@ -16,7 +16,9 @@ Contenedor principal
     background-color: var(--background-color-primary);
 }
 
-
+.Section3Title {
+    color: var(--color-tertiary);
+}
 /*==================================================
 CONTENT
 Bloque de logos de habilidades
@@ -48,8 +50,15 @@ Tarjeta de cada tecnología
     height: 9rem;
     padding: 1rem;
     border-radius: 20px;
-    background-color: var(--background-color-secundary);
+    background-color: var(--background-color-card);
     box-sizing: border-box;
+    box-shadow:0 5px 10px var(--box-shadow-color);
+}
+.Section3LogoContainer:hover {
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--color-accent-primary);
+    transform: scale(1.05);
 }
 
 .Section3LogoContainer-Content {
@@ -91,8 +100,13 @@ Nombre de la tecnología
     align-items: center;
 }
 
+
 .Section3LogoTitle {
     height: 100%;
     margin: 5% 0px 0px 0px;
-    color: var(--color-primary);
+    color: var(--color-tertiary);
+}
+.Section3LogoTitle:hover {
+    height: 100%;
+    margin: 5% 0px 0px 0px;
 }

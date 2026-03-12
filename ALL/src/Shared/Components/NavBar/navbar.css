@@ -11,7 +11,6 @@ Contenedor principal fijo del navbar
 .NavBodyContainer {
   width: 100%;
   position: fixed;
-  background: var(--background-color-primary);
   backdrop-filter: blur(15px);
   height: auto;
 }
@@ -35,6 +34,7 @@ Contenedor interno que organiza logo y menú
   justify-content: space-between;
   margin: 0 auto;
   padding: .3rem;
+  backdrop-filter: blur(20px);
 }
 
 
@@ -112,10 +112,14 @@ Texto del link de navegación
 --------------------------------------------------*/
 .Links {
   font-size: 1rem;
-  text-decoration: none;
   color: var(--color-primary);
 }
-
+.Links:hover {
+  font-size: 1rem;
+  text-decoration: underline;
+  color: var(--color-accent-primary);
+  transform: scale(1.1);
+}
 
 
 /*==================================================
@@ -135,7 +139,6 @@ Contenedor de botones o iconos
   gap: 10px;
 }
 
-
 /*--------------------------------------------------
 BUTTON ICON CONTAINER
 Contenedor de iconos interactivos
@@ -150,7 +153,9 @@ Contenedor de iconos interactivos
   background-color: transparent;
 }
 
-
+.BttnBlockImgContainer:hover {
+  transform: scale(1.1);
+}
 /*--------------------------------------------------
 BUTTON ICON IMAGE
 Imagen dentro del botón

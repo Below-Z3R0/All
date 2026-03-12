@@ -16,7 +16,9 @@ Contenedor principal
     justify-content: center;
 }
 
-.Section4Title {}
+.Section4Title {
+    color: var(--color-tertiary);
+}
 
 
 /*==================================================
@@ -43,15 +45,24 @@ Tarjeta de experiencia
 --------------------------------------------------*/
 .Section4ImgContainer {
     display: flex;
-    background-color: var(--background-color-primary);
+    background-color: var(--background-color-card);
     border-radius: 40px;
     flex-direction: column;
     align-items: center;
     width: 20rem;
     height: 22rem;
     padding: 2rem;
+    gap: 10px;
     overflow: hidden;
     box-sizing: border-box;
+    box-shadow:0 10px 30px var(--box-shadow-color);
+}
+.Section4ImgContainer:hover {
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--color-accent-primary);
+    box-shadow: 0 5px 15px var(--box-shadow-color);
+    transform: scale(1.05);
 }
 
 .Section4Img {
@@ -71,9 +82,10 @@ Contenido textual
 }
 
 .Section4TxtTitle {
+    text-align: center;
     margin: 0px;
-    font-size: 1.5rem;
-    color: var(--color-primary);
+    font-size: 1rem;
+    color: var(--color-accent-primary);
 }
 
 .Section4TxtDate {
