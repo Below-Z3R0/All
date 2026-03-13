@@ -6,11 +6,13 @@ import { LanguageProvider } from './Shared/Hooks/LanguageContext/ProviderLanguag
 import './index.css'
 import App from './App.jsx'
 
+const basename = '/All/'
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <LanguageProvider>
       <ThemeProvider>
-        <BrowserRouter>
+        <BrowserRouter basename={basename}>
           <App />
         </BrowserRouter>
       </ThemeProvider>
