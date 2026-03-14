@@ -9,6 +9,7 @@ import LogoUtp from "../../../assets/Img/LogoUtp.png";
 import Demo from "../../../assets/Img/DEMOV2.svg";
 import React from "../../../assets/Img/ReactV2.svg";
 import PDF from "../../../assets/PDF/CVEmmanuelCenteno.pdf";
+import Foto from "../../../assets/Img/Foto.svg";
 export const CvData = {
 Spanish: {
         Section1: {
@@ -16,15 +17,15 @@ Spanish: {
         Title2:"Emmanuel Centeno",
         Title3:"Desarrollador WEB FRONT-END",
         Paragrapht: "Estudiante de Licenciatura en Gestión y Desarrollo de Software en la Universidad Tecnológica de Panamá (UTP), enfocado en el desarrollo Fullstack. Me apasiona la lógica de programación, la optimización y la creación de aplicaciones web con estructuras claras y escalables. Actualmente trabajo con HTML, CSS, JavaScript, React, Git, GitHub y SQL, desarrollando proyectos con un enfoque minimalista, profesional y orientado a la mejor experiencia de usuario.",
-        ImgSrc: LinkedIn,
+        ImgSrc: GitHub,
         Contact: [
         {Id: 1, ImgSrc: Gmail, Link: "mailto:e.centenopena@gmail.com"},
         {Id: 2, ImgSrc: GitHub, Link: "https://github.com/Below-Z3R0"},
         {Id: 3, ImgSrc: LinkedIn, Link: "https://www.linkedin.com/in/emmanuel-centeno-3bbab53b1/"},
         ],
         Bottons: [
-            {Id:1, Txt: "DOWNLOAD CV", Link: PDF},
-            {Id:2, Txt: "CONTACT", Link: "#contacto"},
+            {Id:1, Txt: "DESCARGAR CV", Link: PDF},
+            {Id:2, Txt: "CONTACTO", Link: "#contact"},
         ]
     },
     
@@ -61,7 +62,7 @@ Spanish: {
                 Name: "Portafolio", 
                 Description: "Portafolio Web con react router, desarrollado de manera responsive e interactiva", 
                 Bottons: [
-                    {Id:1, SrcImg: Demo, Txt: "DEMO", Link:"https://github.com/Below-Z3R0/All"},
+                    {Id:1, SrcImg: Demo, Txt: "DEMO", Link:"https://below-z3r0.github.io/All/"},
                     {Id:2, SrcImg: GitHub, Txt: "REPO", Link:"https://github.com/Below-Z3R0/All"}
                 ], 
                 Logos: [
@@ -92,7 +93,7 @@ English: {
         Title1:"Hello! I'm",
         Title2:"Emmanuel Centeno",
         Paragrapht: "A Software Management and Development student at the Technological University of Panama (UTP), focused on becoming a Fullstack developer. I’m passionate about programming logic, optimization, and building web applications with clear and scalable architectures. I currently work with HTML, CSS, JavaScript, React, Git, GitHub, and SQL, developing projects with a minimalist, professional approach focused on delivering the best possible user experience.",
-        ImgSrc: LinkedIn,
+        ImgSrc: GitHub,
         Contact: [
         {Id: 1, ImgSrc: Gmail, Link: "mailto:e.centenopena@gmail.com"},
         {Id: 2, ImgSrc: GitHub, Link: "https://github.com/Below-Z3R0"},
@@ -138,8 +139,8 @@ English: {
                 Name: "Portafolio", 
                 Description: "Portafolio Web con react router, desarrollado de manera responsive e interactiva", 
                 Bottons: [
-                    {Id:1, SrcImg: Demo, Txt: "DEMO"},
-                    {Id:2, SrcImg: GitHub, Txt: "REPO"}
+                    {Id:1, SrcImg: Demo, Txt: "DEMO", Link:"https://below-z3r0.github.io/All/"},
+                    {Id:2, SrcImg: GitHub, Txt: "REPO", Link:"https://github.com/Below-Z3R0/All"}
                 ], 
                 Logos: [
                     {Id:1, SrcImg: React, Tittle:"React", Description: "Este portafolio esta controlado completamente por react-router desde las secciones ensi hasta cada uno de los elementos esta hecho en react."},

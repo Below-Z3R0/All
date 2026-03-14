@@ -1,24 +1,25 @@
 .Footer {
-    height: 10rem;
+    height: 7rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    padding: 2rem 2rem 0rem 2rem;
-    background-color: var(--background-color-primary);
+    padding: 0rem 2rem 0rem 2rem;
+    background-color: var(--background-color-secundary);
 }
 .FooterContatsContainer {
     display: flex;
+    align-items: end;
     justify-content: center;
     gap: 1rem;
     height: 50%;
     width: 100%;
 }
 .FooterContatsImg {
-    height: 2rem;
-    width: 2rem;
+    height: 1.8rem;
+    width: 1.8rem;
 }
 .FooterContatsImg:hover {
     transform: scale(1.1);

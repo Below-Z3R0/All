@@ -14,7 +14,6 @@ export default function Cv () {
     return (
         <div >
             <Section1 Data={CvData[Language]} Theme={Theme}/>
-            <Section2 Data={CvData[Language]} Theme={Theme}/>
             <Section3 Data={CvData[Language]} Theme={Theme}/>
             <Section4 Data={CvData[Language]} Theme={Theme}/>
             <Section5 Data={CvData[Language]} Theme={Theme}/>

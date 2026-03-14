@@ -24,6 +24,7 @@ function ProjectCard({ item }) {
                         className={`Section5Button Section5Button-${BottonsItem.Id} Link`} 
                         key={BottonsItem.Id}
                         href={BottonsItem.Link}
+                        target="_blank"
                         >
                             <img className="Section5ButtonImg" src={BottonsItem.SrcImg} alt="button" />
                             <p className="Section5ButtonTxt">{BottonsItem.Txt}</p>
@@ -66,7 +67,7 @@ function ProjectCard({ item }) {
 
 export function Section5({ Data}) { 
     return (
-        <div className= "Section Section5" id="proyectos">
+        <div className= "Section Section5" id="proyects">
             <div className="SectionTitleContainer">
                 <h1 className="Section5Title">{Data.Section5.Title}</h1>
             </div>

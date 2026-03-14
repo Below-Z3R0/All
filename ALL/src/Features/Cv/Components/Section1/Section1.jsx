@@ -1,9 +1,8 @@
 import "./Section1.css";
-import { Link } from "react-router-dom";
 
 export function Section1 ({Data}) {
     return (                  
-        <div className = "Section Section1" id="sobremi">
+        <div className = "Section Section1" id="home">
             <div className="Section1Contactblock">
                 <div className="Section1ImgContactContainer">
                 {Data.Section1.Contact.map(Item =>
@@ -38,9 +37,12 @@ export function Section1 ({Data}) {
                     </div>
                     <div className="Section1BottonsContainer">
                     {Data.Section1.Bottons.map(BottonsItems =>
-                    <a key = {BottonsItems.Id} 
+                    <a 
+                    key = {BottonsItems.Id} 
                     className={`Bottons Botton-${BottonsItems.Id} LinkContainer`}
-                    href={BottonsItems.Link}>
+                    href={BottonsItems.Link}
+                    target="_blank"
+                    >
                         <p className = "Sections1BottonsTxt">
                             {BottonsItems.Txt}
                         </p>

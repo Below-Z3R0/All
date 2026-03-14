@@ -2,7 +2,7 @@ import "./Section4.css";
 
 export function Section4 ({Data}){
     return(
-        <div className = "Section Section4" id="habilidades">
+        <div className = "Section Section4" id="training">
             <div className="SectionTitleContainer">
                 <h1 className="Section4Title">
                     {Data.Section4.Title}

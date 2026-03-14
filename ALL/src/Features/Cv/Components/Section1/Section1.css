@@ -10,7 +10,7 @@ Contenedor principal de la sección
 --------------------------------------------------*/
 .Section1 {
     display: flex;
-    padding: 1rem 0rem 5rem 0rem;
+    padding: 1rem 0rem 1rem 0rem;
     height: 100vh;
     max-height: 60rem;
     background-color: var(--background-color-primary);
@@ -30,7 +30,7 @@ Contenedor lateral de contactos
 --------------------------------------------------*/
 .Section1Contactblock {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: end;
     justify-content: center;
     width: 5%;
@@ -40,6 +40,7 @@ Contenedor lateral de contactos
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    padding-bottom: 3rem;
 }
 
 
@@ -78,6 +79,7 @@ Bloque principal de texto
     justify-content: center;
     padding-left: 4rem;
     width: 45%;
+    box-sizing: border-box;
 }
 
 
@@ -96,10 +98,10 @@ Títulos principales
     color: var(--color-primary);
 }
 
-.Section1Title2{
+.Section1Title2 {
     margin: 0px;
     font-size: 3rem;
-    color: var(--color-primary);
+    color: var(--color-secundary);
 }
 
 
@@ -116,7 +118,7 @@ Agrupa texto y botones
 .Section1ContentContainer {
     display: flex;
     flex-direction: column;
-    font-size: smaller;
+    font-size:medium;
 }
 
 

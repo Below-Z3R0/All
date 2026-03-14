@@ -1,29 +1,20 @@
-/*==================================================
-SECTION 6
-Projects Section Layout
-==================================================*/
+/*SECTION 6*/
 
-/*--------------------------------------------------
-SECTION CONTAINER
-Contenedor principal de la sección
---------------------------------------------------*/
+/*SECTION CONTAINER
+Principal Container*/
 .Section6 {
-    background-color: var(--background-color-secundary);
+    background-color: var(--background-color-primary);
 }
 
 
-/*--------------------------------------------------
-SECTION TITLE
-Título principal de la sección
---------------------------------------------------*/
+/*SECTION TITLE
+Title*/
 .Section6TitleContainer {
     color: var(--color-primary);
 }
 
-/*--------------------------------------------------
-CONTENT CONTAINER
-Contenedor que organiza todas las cards
---------------------------------------------------*/
+/*CONTENT CONTAINER
+Content Body*/
 .Section6ContentBody{
     box-sizing: border-box;
     display: flex;
@@ -34,10 +25,8 @@ Contenedor que organiza todas las cards
 }
 
 
-/*==================================================
-FORMULARY CARD
-Estrutura base del formulario
-==================================================*/
+/*FORMULARY CARD
+Formulary Body*/
 .Section6Formulary{
     display: flex;
     flex-direction: column;
@@ -50,10 +39,8 @@ Estrutura base del formulario
     background-color: var(--color-accent-primary);
 }
 
-/*--------------------------------------------------
-CARD SECTIONS
-Secciones del formulario
---------------------------------------------------*/
+/*CARD SECTIONS
+Formulary Sections*/
 .Section6TxtContainer {
     padding-left: 1rem;
     background-color: var(--color-accent-secondary);
@@ -61,12 +48,22 @@ Secciones del formulario
     width: 100%;
     box-sizing: border-box;
 }
+.Section6TxtContainer:nth-child(1) {
+    padding-left: 1rem;
+    background-color: transparent;
+    border-radius: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
 .Section6TxtContainer:hover {
     transform: scale(1.05);    
 }
+
+
 .Section6FormularyTitle {
     color: var(--color-txt-formulary);
 }
+
 .Section6ButtonContainer {
     display: flex;
     justify-content: center;
@@ -87,6 +84,8 @@ Secciones del formulario
 .Section6ButtonContainer:hover {
     transform: scale(1.1);
 }
+
+
 .Section6ButtonTxt {
     margin: 0px;
     font-size: 1rem;

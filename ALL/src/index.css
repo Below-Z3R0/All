@@ -27,7 +27,7 @@ a {
 .Section{
   max-width: 1920px;
   width: 100%;
-  padding: 2.5rem 0rem 5rem 0rem;
+  padding: 2.5rem 0rem 3rem 0rem;
   margin: 0 auto;
 }
 
@@ -49,7 +49,7 @@ a {
 
   /* TEXT */
   --color-primary: #0C1519;      /* Texto principal (muy oscuro) */
-  --color-secundary: #162127;    /* Texto secundario */
+  --color-secundary: #724B39;    /* Texto secundario */
   --color-tertiary: #3A3534;     /* Texto terciario */
 
   /* ACCENT */
@@ -75,7 +75,7 @@ a {
 
   /* TEXT */
   --color-primary: #FAF9F6;      /* Texto principal (muy claro) */
-  --color-secundary: #F4F1EA;
+  --color-secundary: #a28273;
   --color-tertiary: #FAF9F6;
 
   /* ACCENT */

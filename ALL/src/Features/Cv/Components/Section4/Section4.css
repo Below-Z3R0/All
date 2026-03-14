@@ -9,9 +9,8 @@ SECTION CONTAINER
 Contenedor principal
 --------------------------------------------------*/
 .Section4 {
-    background-color: var(--background-color-secundary);
+    background-color: var(--background-color-primary);
     width: 100%;
-    height: 70vh;
     max-height: 70%;
     justify-content: center;
 }

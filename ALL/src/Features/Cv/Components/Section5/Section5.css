@@ -12,9 +12,8 @@ Contenedor principal de la sección
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3rem 1.5rem;
     box-sizing: border-box;
-    background-color: var(--background-color-primary);
+    background-color: var(--background-color-secundary);
     color: var(--color-primary);
 }
 
@@ -61,10 +60,10 @@ Contenedor principal de cada card
     height: 30rem;
     border-radius: 40px;
     border-style: hidden;
+    padding-bottom: 1rem;
     background-color: var(--background-color-card);
     box-shadow:0 10px 30px var(--box-shadow-color);
     overflow: hidden;
-    box-sizing: border-box;
     transition: transform .28s ease, box-shadow .28s ease;
 }
 
